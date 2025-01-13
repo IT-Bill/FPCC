@@ -19,6 +19,7 @@
 #include "fpUtil.h"
 #include "fpInterface.h"
 #include "direct.h"
+#include "json.hh"
 using namespace std;
 
 class InputIntervalsPair {
@@ -211,7 +212,7 @@ struct errorMapInfo
 
 
 class CCSolver {
-private:
+public:
     std::unique_ptr<FloatingPointFunction> funcUnderTest;
     std::vector<InputFitnessPair> inputList;
     std::vector<uint64_t> tracedSID;
@@ -278,7 +279,7 @@ public:
     }
 
 
-private:
+public:
     double generateRandomdouble(double min, double max) 
     {
         std::random_device rd;
@@ -345,11 +346,11 @@ private:
             }
             rawfit = fpUtil::rawCondition(info.opcode, info.op1, info.op2);
             opMap[op3ID] = InputFitnessPair(info.op3,op3fit);
-            std::cout<<std::setprecision(20) << "input " << "opcode " << "op1 " << " op2 " << " op3 " << " op1 fit " << " op2 fit " << " op3 fit " << "rawfit" << "modName" <<"Debug Line"<< "\t"<<std::endl; 
+            // std::cout<<std::setprecision(20) << "input " << "opcode " << "op1 " << " op2 " << " op3 " << " op1 fit " << " op2 fit " << " op3 fit " << "rawfit" << "modName" <<"Debug Line"<< "\t"<<std::endl; 
             // std::cout<<std::setprecision(5) << x << " " << info.opcode << " " << info.op1 << " "  << info.op2 << " "  << info.op3 << " "<< op1fit << " " << op2fit<< " " << op3fit << " " <<rawfit<<" "<<info.op2ID<<" "<<info.modName<<" "<<info.debugLine<< "\t"<<std::endl;
-            std::cout<<std::setprecision(5) << x << " " << info.opcode << " "  << "\t"<<std::endl;
-            std::cout<<std::setprecision(5) <<  info.op1 << " "  << info.op2 << " "  << info.op3 << "\t"<<std::endl;
-            std::cout<<std::setprecision(5) << op1fit << " " << op2fit<< " " << op3fit << " " <<rawfit<<" "<<info.modName<<" "<<info.debugLine<< "\t"<<std::endl;
+            // std::cout<<std::setprecision(5) << x << " " << info.opcode << " "  << "\t"<<std::endl;
+            // std::cout<<std::setprecision(5) <<  info.op1 << " "  << info.op2 << " "  << info.op3 << "\t"<<std::endl;
+            // std::cout<<std::setprecision(5) << op1fit << " " << op2fit<< " " << op3fit << " " <<rawfit<<" "<<info.modName<<" "<<info.debugLine<< "\t"<<std::endl;
         }
         //op3fit = opMap[fpUtil::doubleToI64(y)].fitness;
         if(y!=op3fit){
@@ -542,6 +543,11 @@ private:
             op1ID = fpUtil::doubleToI64(info.op1);
             op2ID = fpUtil::doubleToI64(info.op2);
             op3ID = fpUtil::doubleToI64(info.op3);
+
+            // std::cout << "op1 " << info.op1 << std::endl;
+            // std::cout << "op2 " << info.op2 << std::endl;
+            // std::cout << "op3 " << info.op3 << std::endl;
+            
             if (opMap.count(op1ID)==0){
                opMap[op1ID] = InputFitnessPair(info.op1,0.0);
             }
@@ -564,6 +570,7 @@ private:
             if(info.op2==x){
                 op2fit = 0.0;
             }
+            
             if((op1fit==0.0)&&(op2fit==0.0)){
                 if((op1fit==0.0)&&(op2fit==0.0)){
                     if(info.opcode>16){
@@ -581,6 +588,7 @@ private:
             }else{
                 if(comm.isUnstable(info.opcode)){
                     op3fit = fpUtil::disCalculation(info.opcode,info.op1,info.op2,info.op3,op1fit,op2fit);
+
                 }else{
                     if(op1ID==op2ID){
                         op3fit = op1fit;
@@ -591,6 +599,11 @@ private:
 
             }
             opMap[op3ID] = InputFitnessPair(info.op3,op3fit);
+
+            // std::cout << "op1fit: " << op1fit << std::endl;
+            // std::cout << "op2fit: " << op2fit << std::endl;
+            // std::cout << "op3fit: " << op3fit << std::endl;
+
         }
         if(y!=fpUtil::i64ToDouble(op3ID)){
             op3fit = opMap[fpUtil::doubleToI64(y)].fitness;
@@ -665,7 +678,7 @@ private:
             }
         }
         
-        std::cout << "Current Analyzing Function Index: " << index << std::endl;
+        // std::cout << "Current Analyzing Function Index: " << index << std::endl;
     }
 
     double test_func_direct(int n, const double *xy, int *undefined_flag, void *unused){
@@ -688,6 +701,7 @@ private:
         return 1.0/fabs(fit_val); 
     }
     double simple_func_call(double x){
+        // std::cout << x << std::endl;
         funcUnderTest->call(x);
         if (!funcUnderTest->isSuccess())
             return 1.0;
@@ -809,6 +823,12 @@ private:
         elapsedTime2 = finishTime2 - startTime2;
         std::cout << "\n1. First Direct Search Done.\n";
         std::cout<<std::setprecision(16)<<"First Direct Time is" << elapsedTime2.count()<<"\n"<<std::endl;
+        // for (auto &inpIt: inputIntervals){
+        //     std::cout<<std::setprecision(16) << "input is:" << inpIt.max_inp<<std::endl;
+        //     std::cout<<std::setprecision(16) << "output is:" << inpIt.max_out<<std::endl;
+        //     std::cout<<std::setprecision(16) << "fitness is:" << inpIt.max_fit<<std::endl;
+        //     std::cout << std::endl;
+        // }
     }
 
     // The results stored in instMap.
@@ -1054,10 +1074,91 @@ int main(int argc, char *argv[]) {
     else if (argc > 2 && strcmp(argv[1], "gsl") == 0) {
 	    input = atof(argv[3]);
 	if (!strcmp(argv[2],"all")) {
-	    for (int i = 0; i < GSLFuncList.size(); i++) {
-                funcPtr.reset(new GSLFunction(i));
-		        es.run(funcPtr, input,i);
-	    }
+	    // for (int i = 0; i < GSLFuncList.size(); i++) {
+        //     funcPtr.reset(new GSLFunction(i));
+        //     es.run(funcPtr, input,i);
+	    // }
+        // 1. Read JSON input
+        nlohmann::json jsonData;
+        {
+            std::ifstream inputFile("./data/correlation_in.json");
+            if (!inputFile) {
+                std::cerr << "Error opening JSON file: " << argv[2] << std::endl;
+                return EXIT_FAILURE;
+            }
+            inputFile >> jsonData;
+        }
+
+        // 2. Extract function indices from JSON data and sort them
+        std::vector<int> functionIndices;
+        for (auto it = jsonData.items().begin(); it != jsonData.items().end(); ++it) {
+            functionIndices.push_back(std::stoi(it.key()));
+        }
+        std::sort(functionIndices.begin(), functionIndices.end());
+
+        // 3. Prepare to store our results in the same JSON structure
+        //    (We will add a "results" array, parallel to "inputs".)
+        for (int i : functionIndices) {
+            // Access the function data
+            auto &funcData = jsonData[std::to_string(i)];
+            auto inputsData = funcData["inputs"].get<std::vector<std::vector<double>>>();
+
+            // Initialize your function pointer, evolutionary strategy, etc.
+            funcPtr.reset(new GSLFunction(i));
+            es._init(funcPtr, i);
+
+            // std::cout << "Function Index: " << i << std::endl;
+
+            // This will store the overall results for each "row" of inputs
+            // matching the shape of inputsData (vector<vector<double>>).
+            nlohmann::json errorsArray = nlohmann::json::array();
+            nlohmann::json resultsArray = nlohmann::json::array();
+
+            // 4. Process each vector of inputs
+            for (auto &inputData : inputsData) {
+
+                // Temporary array to store results for this row
+                std::vector<double> rowErrors;
+                rowErrors.reserve(inputData.size());
+
+                std::vector<double> rowResults;
+                rowResults.reserve(inputData.size());
+
+                auto startTime = std::chrono::steady_clock::now();
+                // 5. Call the function on each input in the row
+                for (auto &input : inputData) {
+                    double one_over_fitness = es.simple_func_call(input);
+                    // double result = es.funcUnderTest->getResult();
+                    // rowErrors.push_back(1.0 / one_over_fitness);
+                    // rowResults.push_back(result);
+                }
+
+                auto endTime = std::chrono::steady_clock::now();
+                std::chrono::duration<double> elapsedTime = endTime - startTime;
+                // std::cout << "Execution Time: " << elapsedTime.count() << " s" << std::endl;
+                std::cout << elapsedTime.count() * 1000  << std::endl;
+
+                // Push this row’s results into our results array
+                errorsArray.push_back(rowErrors);
+                resultsArray.push_back(rowResults);
+            }
+
+            // 6. Attach the results array to our JSON structure
+            funcData["errors"] = errorsArray;
+            funcData["results"] = resultsArray;
+        }
+
+        // 7. Write everything out to a new JSON file
+        {
+            std::ofstream outputFile("./data/correlation_out.json");
+            if (!outputFile) {
+                std::cerr << "Error opening output JSON file for writing." << std::endl;
+                return EXIT_FAILURE;
+            }
+            // Pretty-print with 4 spaces (adjust as needed)
+            outputFile << std::setw(4) << jsonData << std::endl;
+        }
+
 	}
 	else {
 	    input = atof(argv[3]);

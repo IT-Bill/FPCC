@@ -1,0 +1,11 @@
+prefix=/fpcc/gslbuild
+exec_prefix=/fpcc/gslbuild
+libdir=/fpcc/gslbuild/lib
+includedir=/fpcc/gslbuild/include
+GSL_CBLAS_LIB=-lgslcblas
+
+Name: GSL
+Description: GNU Scientific Library
+Version: 2.5
+Libs: -L/fpcc/gslbuild/lib -lgsl ${GSL_CBLAS_LIB} -lm -lm 
+Cflags: -I/fpcc/gslbuild/include

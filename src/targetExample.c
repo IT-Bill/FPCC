@@ -1,25 +1,30 @@
 #include <math.h>
 
 double foo(double x) {
+    double val = x + 1 - 2;
+    return val;
+}
+
+// double foo(double x) {
     // This function calculate the motivation example:
     // The example is from gsl_sf_airy_Ai_e function in Line 680 of gsl-2.5/specfunc/airy.c
     // you can copy this exampe to /atom/src and run make && bin/gslSolver.out example 0 under /atom
     // x range is [-infinty,1]
-    double b = 0.0088094517676206868934;
-    double a = -0.019999248799348758043;
-    if(x<=1){
-        double v1 = 0.25 + b;
-        double v2 = x*v1;
-        double v3 = a-v2;
-        double v4 = 0.375+v3;
-        return v4;
+    // double b = 0.0088094517676206868934;
+    // double a = -0.019999248799348758043;
+    // if(x<=1){
+    //     double v1 = 0.25 + b;
+    //     double v2 = x*v1;
+    //     double v3 = a-v2;
+    //     double v4 = 0.375+v3;
+    //     return v4;
 
-    }else{
-        return 0.0;
-    }
-    double val = (1-cos(x))/(x*x);
-    return val;
-}
+    // }else{
+    //     return 0.0;
+    // }
+    // double val = (1-cos(x))/(x*x);
+//     return val;
+// }
 
 double foo2(double x) {
     // This function calculate the motivation example:
