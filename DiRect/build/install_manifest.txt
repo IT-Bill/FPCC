@@ -1,1 +1,0 @@
-/opt/DiRect/lib/libdirect_opt.a
