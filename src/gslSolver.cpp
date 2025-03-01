@@ -1081,7 +1081,7 @@ int main(int argc, char *argv[]) {
             // 1. Read JSON input
             nlohmann::json jsonData;
             {
-                std::ifstream inputFile("./data/correlation_in_77_78.json");
+                std::ifstream inputFile("./data/correlation_in_se_expand_1ulp.json");
                 if (!inputFile) {
                     std::cerr << "Error opening JSON file: " << argv[2] << std::endl;
                     return EXIT_FAILURE;
@@ -1104,8 +1104,8 @@ int main(int argc, char *argv[]) {
                 auto inputsData = funcData["inputs"].get<std::vector<std::vector<double>>>();
 
                 // Initialize your function pointer, evolutionary strategy, etc.
-                funcPtr.reset(new GSLFunction(i));  // !!!
-                // funcPtr.reset(new SimpleFunction(i));  // !!!
+                // funcPtr.reset(new GSLFunction(i));  // !!!
+                funcPtr.reset(new SimpleFunction(i));  // !!!
                 es._init(funcPtr, i);
 
                 // std::cout << "Function Index: " << i << std::endl;
@@ -1151,7 +1151,7 @@ int main(int argc, char *argv[]) {
 
             // 7. Write everything out to a new JSON file
             {
-                std::ofstream outputFile("./data/correlation_out_77_78.json");
+                std::ofstream outputFile("./data/correlation_out_se_expand_1ulp.json");
                 if (!outputFile) {
                     std::cerr << "Error opening output JSON file for writing." << std::endl;
                     return EXIT_FAILURE;

@@ -1,0 +1,147 @@
+####################################################################################################
+Function id: 0, search input num: 19, name recursive_summation,maximum error:5.00000000000000000000e+00, function output: 5.68434188608080148697e-14, real output:-1.42108547152020037174e-14,condition number: 7.04387531369768700000e+15, time: 9.88572419999999993934e+01
+input list is:-0x1.0aab18259d8cap+6,-0x1.0aaaaaaaaaaaap+6,-0x1.0aaaaaaaaaaaap+6,-0x1p-45,-0x1.077034d28p-13,0x0p+0,0x1.8p-45,-0x1p-45,-0x1.0aaaaaaaaaaaap+6,0x1.4879ep-26,0x0p+0,-0x1.0bc39975a3feap+6,0x0p+0,0x0p+0,0x0p+0,0x0p+0,0x0p+0,0x0p+0,0x0p+0,-0x1.f80f7aeed3cp-4,-0x1.0aaaab13d5862p+6,0x1.0aaaaaaaaaaaap+6,0x1.0aaaaaaaaaaaap+6,0x0p+0,0x1.0aaaaaaaaaaaap+6,0x1.0aaacb8d24fc6p+6,0x0p+0,0x1.0c420b42c13fcp+6,0x0p+0,0x0p+0,0x0p+0,0x1.0aaaaaaaaaaaap+6,
+
+
+
+
+####################################################################################################
+Function id: 1, search input num: 10, name pairwise_summation,maximum error:9.00000000000000000000e+00, function output: -5.68434188608080148697e-14, real output:7.10542735760100185871e-15,condition number: 1.41589096042394160000e+16, time: 9.65105159999999955289e+01
+input list is:0x0p+0,-0x1.6504ce3c94d94p+4,0x0p+0,-0x1.15080d00dc57cp+6,0x1.da195b71dc9p+2,0x1.14addfaf90254p+6,-0x1.bbf14ed1dp-9,-0x1.0ab512535e91cp+6,-0x1.15c45dab76e08p+6,-0x1.d9106441f220dp+5,0x0p+0,-0x1.da12f684bda9p+2,0x1.859p-30,0x1.ecb7p-25,-0x1.d162195be2c44p+5,-0x1.4879ep-26,0x1.0aab0d55f38dcp+6,0x1.6b74775a4dep+1,-0x1.bbf1796478p-9,-0x1.4cf51681a2p-7,0x1.2ba93d96fp-10,0x1p-43,-0x1p-45,-0x1.5ec518bep-15,-0x1.b0082f3ae0108p+4,0x1.8p-45,0x1.0aaab59f8af6cp+6,0x1.0aab0d5219a02p+6,0x1.bbf17351fp-9,0x1.9p+6,0x1.8p-45,0x1.4c869p-26,
+
+
+
+
+####################################################################################################
+Function id: 2, search input num: 3, name compensated_summation,maximum error:2.00000000000000000000e+00, function output: 1.42108547152020037174e-14, real output:-1.42108547152020037174e-14,condition number: 2.00568386220510308781e+24, time: 9.42379210000000000491e+01
+input list is:-0x1.1e45085ab1f89p+6,-0x1.47c0778d6f80fp+6,-0x1.7df325c77be64p+4,0x1.aa16350ed42c4p+4,-0x1.359f770e2b3efp+5,-0x1.2241353fa4827p+6,-0x1.afc596609f8b3p+5,0x1.b733cf912e67cp+5,-0x1.8e0634939decp+3,-0x1.886cfba850dap+5,0x1.be9d5449fd3acp+4,-0x1.d08c223ca1188p+3,-0x1.afaf7f659f5fp+5,-0x1.87a92b690f52p+2,0x1.2d6a9df3fad54p+6,0x1.314c928762998p+3,-0x1.220594e1840b3p+5,0x1.63d1f48d07a4p+5,-0x1.98c0fb203182p+3,0x1.aa5028ba14a04p+5,-0x1.bce69e9279cdp+3,-0x1.2d5a9207dab54p+4,-0x1.6504cc9cdaa8cp+4,0x1.40ecf64c21dap+6,0x1.9d48356af884p+2,-0x1.a5662e8946e8p-1,-0x1.c0376f4d006fp+4,-0x1.667375720ce6fp+5,0x1.65a0df7f652ccp+6,0x1.1fecca825fd9ap+6,0x1.6d2c63359a58cp+5,0x1.1a61ba5b94c38p+6,
+
+
+
+
+####################################################################################################
+Function id: 3, search input num: 3, name sum,maximum error:1.00000000000000000000e+00, function output: -2.84217094304040074348e-14, real output:-1.42108547152020037174e-14,condition number: 4.78171313007329200000e+15, time: 9.56251950000000050522e+01
+input list is:-0x1.14f38066830aep+6,-0x1.0aaaaaaaa28e9p+6,0x1.0aaaaaaaaaac2p+6,0x1.14f380667aed4p+6,
+
+
+
+
+####################################################################################################
+Function id: 4, search input num: 1, name 2norm,maximum error:2.06621805092980681418e-16, function output: 1.37554259665934637269e+02, real output:1.37554259665934665691e+02,condition number: 2.35057265409612314855e+00, time: 9.56340540000000061127e+01
+input list is:-0x1.7ee2ec111dc5ep+6,0x0p+0,-0x1.74348fe008692p+6,0x1.09547135d2a8cp+5,
+
+
+
+
+####################################################################################################
+Function id: 5, search input num: 2, name 1norm,maximum error:1.99206930017975277721e-16, function output: 2.85348601354776064909e+02, real output:2.85348601354776121752e+02,condition number: 1.00000000000000022204e+00, time: 9.41426900000000017599e+01
+input list is:0x1.638e38e38e38ep+6,-0x1.92e89463e5d13p+5,-0x1.45ed097b425edp+6,-0x1.02756b3024eaep+6,
+
+
+
+
+####################################################################################################
+Function id: 6, search input num: 7, name dot,maximum error:2.25179981368524900000e+15, function output: -4.54747350886464118958e-13, real output:2.01948391736579022185e-28,condition number: 2.82343726638775280000e+16, time: 9.56000889999999969859e+01
+input list is:-0x1.638e38e38e38cp+4,-0x1.0aaaaaaaaaaaap+6,0x1.0aaaaaaaaaaaap+6,-0x1.638e38e38e38cp+4,0x1.638e38e38e39p+6,0x1.0aaaaaaaaaaaap+6,0x1.638e38e38e38ep+6,-0x1.638e38e38e38cp+4,
+
+
+
+
+####################################################################################################
+Function id: 7, search input num: 6, name conv,maximum error:6.30748294794585603995e+02, function output: 2.27373675443232059479e-13, real output:-3.61054848933569445650e-16,condition number: 2.60624978435792520000e+16, time: 9.56019419999999939819e+01
+input list is:0x1.0aaaaaaaaaaaap+6,-0x1.638e38e38e38cp+4,-0x1.638e38e61f2cap+5,0x1.0aaaaaaaa69c4p+6,-0x1.638e38e38e38cp+4,0x1.638e38e89fe7cp+4,0x1.638e38d4592ccp+4,0x1.638e38e38e38cp+5,
+
+
+
+
+####################################################################################################
+Function id: 8, search input num: 3, name mv,maximum error:2.06432320237650017702e+01, function output: 4.54747350886464118958e-13, real output:-2.31503324064133866938e-14,condition number: 7.40474463670270080000e+16, time: 9.42026599999999945112e+01
+input list is:-0x1.f19eff28233ep+5,-0x1.19f1f9018432p+5,0x1.28566258d6fc4p+6,-0x1.4fcb1eb16d764p+5,-0x1.f41f7494283eep+5,0x1.85632491eac64p+6,0x1.70a291eac1452p+6,-0x1.8f8971929f13p+4,-0x1.5fc228387f845p+5,0x1.9e083c897c108p+5,0x1.39468f7dd28d2p+6,-0x1.e102d2390205ap+5,-0x1.f33f484c267e9p+5,0x1.8ff5358bcab72p+6,0x1.07529cbb4ea54p+5,-0x1.53370651666ep+5,0x1.8b2f7bd4765fp+6,0x1.37ab89e8cf572p+6,0x1.0aaaa6f64e6f8p+6,-0x1.78a8ecc91151ep+6,
+
+
+
+
+####################################################################################################
+Function id: 9, search input num: 12, name mm,maximum error:2.79999999999999971134e-01, function output: 9.09494701772928237915e-13, real output:1.26318708579573361889e-12,condition number: 1.08593741014913560000e+16, time: 9.56876340000000027430e+01
+input list is:-0x1.0aaaaaaaaaaaap+6,0x0p+0,0x0p+0,0x0p+0,0x1.638e38e38e39p+4,0x0p+0,-0x1.57f313d72fe64p+4,0x0p+0,-0x1.638e38e38e38ep+5,0x0p+0,0x0p+0,0x0p+0,0x1.0aaaaaaaaaaaap+6,0x0p+0,0x0p+0,0x0p+0,0x1.638e38e38e38cp+5,0x1.638e38e38e39p+4,0x1.638e38e38e38cp+5,0x1.0aaaaaaaaaaaap+6,0x0p+0,0x0p+0,0x0p+0,0x1.0aaaaaaaaaaaap+6,0x0p+0,0x0p+0,0x0p+0,0x0p+0,0x0p+0,-0x1.77612da90ec26p+6,-0x1.a08c6684c118cp+4,0x0p+0,
+
+
+
+
+####################################################################################################
+Function id: 10, search input num: 13, name LU,maximum error:1.15292150460684697600e+18, function output: 3.72529029846191406250e-09, real output:-3.23117426778526435497e-27,condition number: 3.94776834692616320000e+16, time: 9.56272770000000065238e+01
+input list is:0x1.638e38e38e38ep+6,0x1.0aaaaaaaaaaaap+6,0x0p+0,0x1.638e38e38e38ep+6,0x0p+0,0x1.0aaaaaaaaaaaap+6,0x1.638e38e38e38ep+6,0x1.638e38e38e38ep+6,-0x1.284bda12f684cp+6,0x1.0aaaaaaaaaaaap+6,0x0p+0,0x1.0aab35eb48578p+5,0x1.0aaaaaaaaaaaap+6,0x0p+0,-0x1.0aaaaaaaaaaaap+6,0x0p+0,
+
+
+
+
+####################################################################################################
+Function id: 11, search input num: 11, name QR,maximum error:1.15292150460684697600e+18, function output: -3.55271367880050092936e-15, real output:3.08148791101957736489e-33,condition number: 1.32721013224323626972e+35, time: 9.42210230000000024120e+01
+input list is:0x0p+0,0x1.0aaaaaaaaaaaap+6,0x1.0aaaaaaaaaaaap+6,0x0p+0,-0x1.0aaaaaaaaaaaap+6,-0x1.0aaaaaaaaaaaap+6,-0x1.0aaaaaaaaaaaap+6,-0x1.0aaaaaaaaaaaap+6,0x0p+0,0x0p+0,0x0p+0,0x0p+0,-0x1.6e25e0e48de8fp+6,0x1.0aaaaaaaaaaaap+6,0x1.0aaaaaaaaaaaap+6,-0x1.391f7c5a2de58p+4,
+
+
+
+
+####################################################################################################
+Function id: 12, search input num: 8, name wmean,maximum error:1.15292150460684697600e+18, function output: -3.55271367880050092936e-15, real output:-3.08148791101957736489e-33,condition number: 1.25209839846702944000e+17, time: 9.55623360000000019454e+01
+input list is:0x1.0aaaaaaaaaaaap+6,0x1.812f684bda12ep+6,0x1.812f684bda12ep+6,0x1.0aaaaaaaaaaaap+6,0x1.0aaaaaaaaaaaap+6,0x0p+0,0x0p+0,-0x1.0aaaaaaaaaaaap+6,
+
+
+
+
+####################################################################################################
+Function id: 13, search input num: 4, name wvariance_m,maximum error:5.85886799537526092863e-01, function output: 1.60133644321436943337e-28, real output:1.00974195868289511093e-28,condition number: 2.60684113759938360000e+16, time: 9.55529630000000054224e+01
+input list is:0x1.0aaaaaaaaaa9cp+5,0x1.387913e3f0f24p+4,0x0p+0,-0x1.a6b3e9b8beep-2,-0x1.0e8401d6bd087p+6,-0x1.0e8401d6bd088p+6,0x1.0f998f82c9e38p+6,0x0p+0,
+
+
+
+
+####################################################################################################
+Function id: 14, search input num: 1, name wvariance_w,maximum error:6.29262753229205884509e-01, function output: 7.79976101107691631449e-29, real output:4.78729474151284427069e-29,condition number: 5.30920798721106944000e+17, time: 9.40546659999999974389e+01
+input list is:0x1.f562588a2ac4cp+5,-0x1.e1fbafc4c3f78p+3,0x1.8e63e0c6fcc7cp+6,-0x1.afae8313df5dp+4,-0x1.548aba51c9158p+6,0x1.7d63c6ccfac8p+2,-0x1.548aba51c9157p+6,0x1.a7b582148f6bp+5,
+
+
+
+
+####################################################################################################
+Function id: 15, search input num: 6, name wsd_m,maximum error:4.28868990279524242570e-01, function output: 1.81617465539622822360e-14, real output:1.27105750614752780151e-14,condition number: 5.47312455199528080000e+16, time: 9.55727279999999979054e+01
+input list is:-0x1.638e42fe4dc3p+3,0x1.0aaaaac1c33acp+5,0x1.8ffffd9bf50c6p+6,0x1.8ffffff473b74p+6,-0x1.1p-41,0x1.371c71c71c75ep+6,0x1.371c71c71c75cp+6,0x1.371c71c71c75cp+6,
+
+
+
+
+####################################################################################################
+Function id: 16, search input num: 6, name wsd_w,maximum error:4.10545443426684975030e-01, function output: 1.42108547152020037174e-14, real output:1.00747230664749813429e-14,condition number: 6.91174254738591120000e+16, time: 9.55020420000000029859e+01
+input list is:0x1.148b0fcd6e9dcp+5,-0x1.148b0fcd6e9ep+5,0x1.9000000000004p+6,0x1.9000000000004p+6,0x1.8b0fcd6e9e062p+6,0x0p+0,0x1.8b0fcd6e9e064p+6,0x1.8b0fcd6e9e064p+6,
+
+
+
+
+####################################################################################################
+Function id: 17, search input num: 5, name wtss_m,maximum error:1.00000000000000000000e+00, function output: 1.79509681543625791121e-26, real output:8.97548407718128955603e-27,condition number: 5.43743092219152320000e+16, time: 9.40312129999999939400e+01
+input list is:-0x1.2a3f50431254p+4,0x1.638e38e38e38ep+6,0x1.638e38e38e38ep+6,-0x1.0aaaaaaaaaaaap+6,0x0p+0,-0x1.576cb44aced98p+6,-0x1.576cb44aced97p+6,0x0p+0,
+
+
+
+
+####################################################################################################
+Function id: 18, search input num: 6, name wabsdev_m,maximum error:5.86666666666670777452e-01, function output: 8.62801893422978256196e-15, real output:5.43782705938850420202e-15,condition number: 1.43784591427309184000e+17, time: 9.55319910000000049877e+01
+input list is:0x1.0aaaaaaaaaa9cp+5,0x1.371c71c71c72ep+6,0x1.9000000000004p+6,0x1.8fffffffffffep+6,0x1.0aaaaaaaaaaap+5,0x1.0aaaaaaaaaa9cp+5,0x1.0aaaaaaaaaa9cp+5,0x1.0aaaaaaaaaa9cp+5,
+
+
+
+
+####################################################################################################
+Function id: 19, search input num: 5, name wkurtosis_m,maximum error:9.94764837717530383543e+01, function output: 4.44089209850062616169e-16, real output:-4.50959653351722348313e-18,condition number: 2.60183529366573824000e+18, time: 9.40488670000000013260e+01
+input list is:0x1.638e38e38e384p+5,0x1.0aaaaaaaaaaa6p+6,0x1.638e38e38e39p+6,0x1.d4e4903829c9p+4,0x1.638e38e38e32p+4,0x1.41c78142038f4p+4,0x1.638e38e38e39p+4,0x1.0a2774b4ada58p+6,
+
+
+
+
+####################################################################################################
+Function id: 20, search input num: 5, name wkew_m,maximum error:7.68614336404564608000e+17, function output: -1.11022302462515654042e-16, real output:1.44444745829042688979e-34,condition number: 2.61123712535742464000e+18, time: 9.55015460000000047103e+01
+input list is:0x0p+0,0x1.638e38e38e39p+4,0x1.638e38e38e38ep+6,0x1.0aaaaaaaaaaaap+6,0x1.0aaaaaaaaaaaap+6,0x0p+0,0x1.e0a88f469598cp+5,0x0p+0,
+
+
+
+
